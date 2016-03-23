@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+    
+	<servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>  
+
+	<servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/AdminServlet</url-pattern>
+    </servlet-mapping> 
+	
+	<servlet>
+        <servlet-name>AddCarServlet</servlet-name>
+        <servlet-class>AddCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCarServlet</servlet-name>
+        <url-pattern>/AddCarServlet</url-pattern>
+    </servlet-mapping> 
+<servlet>
+        <servlet-name>UpdateCarServlet</servlet-name>
+        <servlet-class>UpdateCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCarServlet</servlet-name>
+        <url-pattern>/UpdateCarServlet</url-pattern>
+    </servlet-mapping> 
+
+<servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping> 
+	
+  <servlet>
+        <servlet-name>SearchCars</servlet-name>
+        <servlet-class>SearchCars</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchCars</servlet-name>
+        <url-pattern>/SearchCars</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+        <servlet-name>ReserveCar</servlet-name>
+        <servlet-class>ReserveCar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReserveCar</servlet-name>
+        <url-pattern>/ReserveCar</url-pattern>
+  </servlet-mapping> 
+
+	  <servlet>
+        <servlet-name>ViewReservations</servlet-name>
+        <servlet-class>ViewReservations</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewReservations</servlet-name>
+        <url-pattern>/ViewReservations</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+        <servlet-name>CancelReservation</servlet-name>
+        <servlet-class>CancelReservation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelReservation</servlet-name>
+        <url-pattern>/CancelReservation</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <servlet-name>AutoCompleteServlet</servlet-name>
+      <servlet-class>AutoCompleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AutoCompleteServlet</servlet-name>
+      <url-pattern>/autocomplete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>SingleCarPage</servlet-name>
+      <servlet-class>SingleCarPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>SingleCarPage</servlet-name>
+      <url-pattern>/SingleCarPage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+      <servlet-name>WriteReview</servlet-name>
+      <servlet-class>WriteReview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>WriteReview</servlet-name>
+      <url-pattern>/WriteReview</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>ViewReviews</servlet-name>
+      <servlet-class>ViewReviews</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ViewReviews</servlet-name>
+      <url-pattern>/ViewReviews</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <servlet-name>SubmitReview</servlet-name>
+      <servlet-class>SubmitReview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>SubmitReview</servlet-name>
+      <url-pattern>/SubmitReview</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>ApplyPromo</servlet-name>
+      <servlet-class>ApplyPromo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ApplyPromo</servlet-name>
+      <url-pattern>/ApplyPromo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <servlet-name>ViewAllReservations</servlet-name>
+      <servlet-class>ViewAllReservations</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ViewAllReservations</servlet-name>
+      <url-pattern>/ViewAllReservations</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
